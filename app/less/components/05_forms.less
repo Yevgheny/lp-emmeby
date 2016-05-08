@@ -1,0 +1,57 @@
+input, textarea, select {
+	box-sizing: border-box;
+	font-family: @ff;
+	font-size: @fs;
+	line-height: 1;
+	color: @text-color;
+	padding-left: 4.8rem;
+  	border: none;
+  	outline: none;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 		{opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder          				{opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder           				{opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			{opacity: 0; transition: opacity 0.3s ease;}
+
+.main-form {
+	input {
+		width: 26rem;
+		height: 5.5rem;
+		border-radius: 10px;
+		margin-bottom: 1rem;
+		background-color: rgb(255, 255, 255);
+  		box-shadow: inset 0px 1px 0px 0px rgba(219, 219, 219, 0.8);
+	}
+	textarea {
+		padding-top: 2rem;
+		width: 26rem;
+		height: 12.5rem;
+		border-radius: 5px;
+		margin-bottom: 1.5rem;
+		box-shadow: inset 0px 1px 0px 0px rgba(219, 219, 219, 0.8);
+	}
+	.placeholder(@ff; 1.6rem; 400; @grey);
+}
+
+.input--name {
+	background: url("@{dir}ico-user.png") no-repeat 5% 45%;
+}
+.input--phone {
+	background: url("@{dir}ico-phone.png") no-repeat 5% 45%;
+}
+
+.error-list {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none !important;
+	}
+	li {
+		min-height: auto !important;
+		font-size: 1.2rem !important;
+		font-weight: 400 !important;
+		color: #e42322 !important;
+		margin-bottom: 0.5rem !important;
+		background: none !important;
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "emmebi-italia",
+  "description": "landing page about cosmetics",
+  "private": true,
+  "version": "0.0.1",
+  "author": "MEA Development",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-html": "^7.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-remove-logging": "latest",
+    "newer": "^0.1.5"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^6.0.0"
+  }
+}
