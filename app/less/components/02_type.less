@@ -8,7 +8,7 @@ h1 {
 	font-size: @h1; 
 	font-weight: 400; 
 	line-height: @lh; 
-	color: @text-color; 
+	color: #fff; 
 	margin: @text-margin;
 }
 h2 {
@@ -51,18 +51,16 @@ a {
 	line-height: @lh; 
 	color: @text-color; 
 	margin: @text-margin;
-	&:hover {
-		text-decoration: underline;
-	}
+	transition: 0.25s ease;	
 }
-
-section {
-	.container>h2 {
-		font-weight: 700;
-		text-transform: uppercase;
-		text-align: center;
-		color: #000;
-	}
+.main-headline {
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1;
 }
-
-.align-right {text-align: right;}
+.promo-headline {
+	font-size: 36px;
+	color: #fff;
+	font-weight: 700;
+}

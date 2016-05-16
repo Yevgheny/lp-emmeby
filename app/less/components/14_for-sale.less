@@ -1,0 +1,91 @@
+.for-sale {
+    padding-bottom: 110px;
+}
+.for-sale-headline {
+    text-align: center;
+    padding-top: 45px;
+}
+.for-sale-subheadline-wrap {
+    margin-top: 40px;
+    margin-bottom: 65px;   
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+
+    } 
+}
+.for-sale-pic-wrap {
+    overflow: hidden;
+
+    img {
+        transition: 0.55s ease;
+
+        &:hover {
+            transform: scale(1.2, 1.2)
+        }
+    }
+}
+.for-sale-text-wrap {
+    min-height: 269px;
+
+    h3 {
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.1;
+        padding-top: -5px;
+    }
+    p {
+        font-size: 17px;        
+    }
+}
+.for-sale-btn {
+    display: inline-block;
+    border: 1px solid #29636B;
+    border-radius: 8px;
+    padding: 13px 40px;
+    color: #29636B;
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;        
+        border: 1px solid #29636B;
+        background: #23565D;               
+    }
+
+    &:active {
+        text-decoration: none;
+        outline: none;
+    }
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+@media only screen and (max-width : 1200px) {
+    .for-sale-pic-wrap img {
+        max-width: 100%;
+    }
+
+}
+@media only screen and (max-width : 992px) {
+    .for-sale-pic-wrap {
+        margin-bottom: 20px;
+    }
+    .for-sale-text-wrap {
+        min-height: 120px;
+    } 
+    .for-sale-btn {
+        margin-bottom: 50px;
+    }
+    .for-sale-subheadline-wrap {
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width : 480px) { 
+    .for-sale-btn {
+        width: 100%;
+    }
+}

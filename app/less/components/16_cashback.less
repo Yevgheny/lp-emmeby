@@ -1,0 +1,51 @@
+.cashback {
+    width: 100%;
+    min-height: 396px;
+    background: url("@{dir}cashback-bg.jpg")no-repeat top center;
+}
+.cashback-ico-wrap {
+    display: table;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.cashback-headline-wrap {
+    display: table;
+}
+.cashback-headline-inner,
+.cashback-ico-inner {
+    display: table-cell;
+    height: 396px;
+    vertical-align: middle;
+}
+.cashback-headline {
+    font-size: 30px;
+    font-weight: 700;    
+}
+@media only screen and (max-width : 992px) {
+    .cashback-ico-wrap {
+        width: 100%;
+        text-align: center;
+    }
+    .cashback-headline-inner,
+    .cashback-ico-inner {      
+        height: auto;
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .cashback-ico-wrap {
+        display: block;
+    }
+    .cashback-headline-inner,
+    .cashback-ico-inner {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .cashback-headline {
+        padding-bottom: 30px;
+    }
+}

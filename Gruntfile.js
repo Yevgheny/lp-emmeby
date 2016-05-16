@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
     concat: {      
         dist: {
-          src: ['app/js/common.js', 'app/libs/animate/wow.js', 'app/libs/bootstrap/js/bootstrap.min.js'],
+          src: ['app/js/common.js', 'app/libs/animate/wow.js','app/libs/bootstrap/js/bootstrap.min.js','app/libs/owlcarousel/owlcarousel.js','app/libs/magnific-popup/jquery.magnific-popup.js'],
           dest: 'app/js/compiled.js'
 
       }  
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
     uglify: {      
         build: {
-          src: ['app/compiled.js'],
+          src: ['app/js/compiled.js'],
           dest: 'dist/js/compiled.min.js'
 
       }  
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'app/compiled.css': ['app/main.css', 'app/_media.css', 'app/libs/animate/animate.css', 'app/libs/bootstrap/css/bootstrap.min.css']
+                    'app/compiled.css': ['app/main.css', 'app/css/_media.css', 'app/libs/owlcarousel/owlcarousel.css', 'app/libs/animate/animate.css', 'app/libs/bootstrap/css/bootstrap.min.css', 'app/libs/magnific-popup/magnific-popup.css']
               }
           }
       },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             files: [{
               expand: true,
               cwd: 'app',
-              src: ['*.css', '!*.min.css', '!_media.css'],
+              src: ['*.css', '!*.min.css', '!_media.css', '!_fonts.css'],
               dest: 'dist',
               ext: '.min.css'
               }]
@@ -100,16 +100,12 @@ module.exports = function(grunt) {
             }
         },  
 
-      watch: {
-          scripts: {
-            files: 'app/js/*.js',
-            tasks: ['newer:concat', 'newer:uglify'],              
-            },
+      watch: {          
   
     	  style: {
 
     	  	files: ['app/less/components/*.less'],
-    	    tasks: ['newer:less'],
+    	    tasks: ['less'],
     	    options: {
     	      spawn: false,
     	    },

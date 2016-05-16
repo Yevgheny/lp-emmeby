@@ -1,37 +1,57 @@
-input, textarea, select {
-	box-sizing: border-box;
+
+input, textarea {
+	font-family: @ff !important;
+	font-size: 1.6rem;
+	color: #aa9bc6;
+}
+button {
 	font-family: @ff;
-	font-size: @fs;
-	line-height: 1;
-	color: @text-color;
-	padding-left: 4.8rem;
-  	border: none;
-  	outline: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder       {
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	font-family: @ff !important;
+	font-size: 1.6rem;
+	color: #aa9bc6;
+}
+input::-moz-placeholder, textarea::-moz-placeholder                			{
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	font-family: @ff !important;
+	font-size: 1.6rem;
+	color: #aa9bc6;
+}
+input:-moz-placeholder, textarea:-moz-placeholder                 			{
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	font-family: @ff !important;
+	font-size: 1.6rem;
+	color: #aa9bc6;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder          		{
+	opacity: 1; 
+	transition: opacity 0.3s ease;
+	font-family: @ff !important;
+	font-size: 1.6rem;
+	color: #aa9bc6;
 }
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 		{opacity: 0; transition: opacity 0.3s ease;}
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder          				{opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-moz-placeholder, textarea:focus:-moz-placeholder           				{opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			{opacity: 0; transition: opacity 0.3s ease;}
-
-.main-form {
-	input {
-		width: 26rem;
-		height: 5.5rem;
-		border-radius: 10px;
-		margin-bottom: 1rem;
-		background-color: rgb(255, 255, 255);
-  		box-shadow: inset 0px 1px 0px 0px rgba(219, 219, 219, 0.8);
-	}
-	textarea {
-		padding-top: 2rem;
-		width: 26rem;
-		height: 12.5rem;
-		border-radius: 5px;
-		margin-bottom: 1.5rem;
-		box-shadow: inset 0px 1px 0px 0px rgba(219, 219, 219, 0.8);
-	}
-	.placeholder(@ff; 1.6rem; 400; @grey);
+input, textarea, select {
+	box-sizing: border-box;
+	font-family: @ff;
+	font-size: @fs;
+	line-height: 1;
+	color: #aa9bc6;
+	padding-left: 25px;
+  	border: none;
+  	outline: none;
 }
+
+
+
 
 .input--name {
 	background: url("@{dir}ico-user.png") no-repeat 5% 45%;
@@ -55,3 +75,9 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			
 		background: none !important;
 	}
 }
+.input-group {
+	position: relative;	
+}
+input.error {
+	border: 2px solid red !important;}
+label.error{display: none !important;}

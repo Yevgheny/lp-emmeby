@@ -7,7 +7,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    
 }
 
 /* Small Devices, Tablets */
@@ -39,7 +39,18 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.logo-top-wrap {
+		text-align: center;
+	}
+	.logo-top-pic {
+		margin-right: 0;
+	}	
+	.logo-top-pic img {
+		max-width: 145px;
+	}
+	.phone-top {
+		text-align: right;
+	}
 }
 
 /* Custom, iPhone Retina */

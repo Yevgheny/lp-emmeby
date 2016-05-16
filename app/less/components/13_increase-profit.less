@@ -1,0 +1,63 @@
+.increase-profit {
+    width: 100%;
+    min-height: 690px;
+    background: url("@{dir}increase-profit-bg.png")no-repeat top center;
+
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+.increase-headings-left-side {
+    opacity: 0;
+}
+.increase-headings-wrap {
+    padding-top: 165px;
+}
+.increase-profit__headline {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 44px;
+}
+@media only screen and (max-width : 1200px) {
+    .increase-profit__headline {
+        background: rgba(0,0,0,0.3);
+    }
+    .increase-profit p {    
+        background: rgba(0,0,0,0.9);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) { 
+    .increase-profit {    
+        background: #194A51; 
+        padding-top: 45px; 
+        padding-bottom: 45px; 
+    }  
+    .increase-headings-left-side {
+        opacity: 1;
+    }    
+    .increase-headings-left-side img {
+        max-width: 100%;
+    }
+    .increase-headings-wrap {
+        padding-top: 0;
+    }
+    .increase-profit__headline {        
+        background: none;
+    }
+    .increase-profit p {           
+        background: none;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .increase-profit__headline {
+        font-size: 32px;
+    }
+    .increase-profit p {
+        font-size: 20px;
+    }
+}
