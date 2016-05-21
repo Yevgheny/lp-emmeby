@@ -1,3 +1,9 @@
+<head>
+	
+	<meta http-equiv="refresh" content="0; url=http://www.emmebilv.com.ua/thanks.html" />
+
+</head>
+
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];

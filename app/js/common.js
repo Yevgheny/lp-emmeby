@@ -1,6 +1,6 @@
 $(function() {
 
-    $('.success-secret-slider-1').magnificPopup({
+    $('.certificates-slider').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
@@ -115,24 +115,7 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+	
 
 	//Chrome Smooth Scroll
 	try {
@@ -210,7 +193,7 @@ $( ".close" ).click(function() {
 	        loop:false, //Зацикливаем слайдер
 			margin:10, //Отступ от картино если выводите больше 1
 			nav:true, //Отключил навигацию
-			autoplay: true,
+			autoplay: false,
 			autoplayHoverPause: true,						
 			smartSpeed:1000, //Время движения слайда
 			autoplayTimeout:2000, //Время смены слайда

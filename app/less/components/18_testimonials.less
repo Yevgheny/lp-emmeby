@@ -2,6 +2,9 @@
     margin-top: 125px;
     margin-bottom: 105px;
 }
+.owl-carousel.test-slider .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next {
+    top: 40%;
+}
 .small-pic-wrap {
     a {
         display: inline-block;
@@ -20,10 +23,11 @@
     max-width: 470px;
 
     h3 {
-        font-size: 28px;
+        font-size: 26px;
+        line-height: 1.1;
     }
     p {
-        font-size: 17px;
+        font-size: 16px;
     }
     span {
         font-weight: 700;
@@ -34,6 +38,22 @@
 }
 .big-pic-wrap {
     margin-bottom: 30px;
+}
+.test-slider-sign-wrap {
+    span {
+        display: inline-block;
+        vertical-align: top;
+        width: 230px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width : 1350px) {
+    .owl-carousel.test-slider .owl-controls .owl-nav .owl-next {
+        right: 0;
+    }
+    .owl-carousel.test-slider .owl-controls .owl-nav .owl-prev {
+        left: -7%;
+    }
 }
 @media only screen and (max-width : 1200px) {
     .testimonials {
